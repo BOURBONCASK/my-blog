@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500">
+  <defs>
+    <linearGradient id="night" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090b1a"/>
+      <stop offset="100%" stop-color="#1c1f3b"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff6ec4"/>
+      <stop offset="100%" stop-color="#7873f5"/>
+    </linearGradient>
+    <linearGradient id="reflection" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1f8ef1" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#ff4f81" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#night)"/>
+  <g fill="url(#neon)">
+    <rect x="160" y="220" width="140" height="520" rx="30" opacity="0.7"/>
+    <rect x="340" y="120" width="120" height="640" rx="26" opacity="0.9"/>
+    <rect x="520" y="260" width="180" height="520" rx="28"/>
+    <rect x="780" y="200" width="140" height="560" rx="24" opacity="0.85"/>
+    <rect x="960" y="280" width="110" height="500" rx="20" opacity="0.6"/>
+  </g>
+  <rect x="0" y="880" width="1200" height="620" fill="url(#reflection)" opacity="0.65"/>
+  <g stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.35">
+    <line x1="120" y1="900" x2="120" y2="1450"/>
+    <line x1="420" y1="920" x2="420" y2="1480"/>
+    <line x1="760" y1="910" x2="760" y2="1440"/>
+    <line x1="1020" y1="930" x2="1020" y2="1460"/>
+  </g>
+  <g opacity="0.3" fill="#ffffff">
+    <circle cx="200" cy="150" r="6"/>
+    <circle cx="480" cy="60" r="5"/>
+    <circle cx="820" cy="110" r="4"/>
+    <circle cx="1030" cy="190" r="5"/>
+  </g>
+</svg>

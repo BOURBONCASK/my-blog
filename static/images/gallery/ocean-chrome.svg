@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500">
+  <defs>
+    <linearGradient id="deep" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#001f3f"/>
+      <stop offset="100%" stop-color="#0d47a1"/>
+    </linearGradient>
+    <linearGradient id="chrome" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#74ebd5"/>
+      <stop offset="50%" stop-color="#acb6e5"/>
+      <stop offset="100%" stop-color="#74ebd5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#deep)"/>
+  <g fill="none" stroke="url(#chrome)" stroke-width="12">
+    <path d="M0 960 Q200 900 360 950 T720 930 T1200 980"/>
+    <path d="M0 1040 Q220 980 420 1040 T820 1010 T1200 1080" opacity="0.8"/>
+    <path d="M0 1120 Q260 1070 480 1125 T900 1100 T1200 1160" opacity="0.6"/>
+    <path d="M0 1200 Q300 1150 540 1200 T940 1180 T1200 1240" opacity="0.45"/>
+  </g>
+  <g fill="#e0f7fa" opacity="0.55">
+    <circle cx="220" cy="880" r="18"/>
+    <circle cx="480" cy="910" r="12"/>
+    <circle cx="760" cy="880" r="20"/>
+    <circle cx="1020" cy="900" r="14"/>
+  </g>
+</svg>

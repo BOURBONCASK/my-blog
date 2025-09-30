@@ -1,4 +1,71 @@
-baseURL = 'https://BOURBONCASK.github.io/'
-title = 'My New Hugo Site'
-theme = "PaperMod"
+baseURL = 'https://bourboncask.github.io/'
+languageCode = 'en-us'
+title = 'BourbonCask Studio'
+theme = 'PaperMod'
+[pagination]
+  pagerSize = 6
+enableRobotsTXT = true
+buildDrafts = false
+buildExpired = false
+buildFuture = false
 
+[permalinks]
+  posts = '/posts/:year/:month/:slug/'
+
+[params]
+  env = 'production'
+  description = 'A minimal Hugo site for documenting engineering journeys, experiments, and visual stories.'
+  keywords = ['hugo', 'PaperMod', 'engineering blog', 'design', 'gallery']
+  author = 'BourbonCask'
+  defaultTheme = 'auto'
+  disableThemeToggle = false
+  ShowShareButtons = true
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowToc = true
+  comments = false
+
+[params.homeInfoParams]
+  Title = '你好，我是 BourbonCask'
+  Content = '我是一名热爱优雅设计与稳健工程的开发者，喜欢用文字记录实践，善于用图像呈现灵感。这个空间用于分享技术体会、设计探索与生活灵感。'
+
+[[params.socialIcons]]
+  name = 'github'
+  url = 'https://github.com/BOURBONCASK'
+
+[[params.socialIcons]]
+  name = 'twitter'
+  url = 'https://twitter.com/'
+
+[[params.socialIcons]]
+  name = 'email'
+  url = 'mailto:hello@example.com'
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    style = 'dracula'
+  [markup.tableOfContents]
+    endLevel = 3
+    startLevel = 2
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[[menu.main]]
+  name = 'Blog'
+  url = '/posts/'
+  weight = 10
+
+[[menu.main]]
+  name = 'Gallery'
+  url = '/gallery/'
+  weight = 20
+
+[[menu.main]]
+  name = 'About'
+  url = '/about/'
+  weight = 30
