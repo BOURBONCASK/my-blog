@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <div class="wrapper site-footer__inner">
+    <span>© {{ now.Format "2006" }} {{ .Site.Title }}</span>
+    {{ with .Site.Params.socialIcons }}
+      <div class="footer-socials">
+        {{ range . }}
+          <a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</footer>

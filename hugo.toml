@@ -1,7 +1,6 @@
-baseURL = 'https://bourboncask.github.io/'
+baseURL = 'https://bourboncask.github.io/my-blog/'
 languageCode = 'en-us'
 title = 'BourbonCask Studio'
-theme = 'PaperMod'
 [pagination]
   pagerSize = 6
 enableRobotsTXT = true
@@ -53,7 +52,7 @@ buildFuture = false
     startLevel = 2
 
 [outputs]
-  home = ['HTML', 'RSS', 'JSON']
+  home = ['HTML', 'RSS']
 
 [[menu.main]]
   name = 'Blog'
