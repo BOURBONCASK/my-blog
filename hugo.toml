@@ -1,0 +1,4 @@
+baseURL = 'https://BOURBONCASK.github.io/'
+title = 'My New Hugo Site'
+theme = "PaperMod"
+
