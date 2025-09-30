@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="1750" viewBox="0 0 1050 1750">
+  <defs>
+    <linearGradient id="steam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f6f0ff"/>
+      <stop offset="100%" stop-color="#e8d9ff"/>
+    </linearGradient>
+    <linearGradient id="ceramic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9f8bff"/>
+      <stop offset="100%" stop-color="#6557ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1050" height="1750" fill="url(#steam)"/>
+  <g fill="#fff" opacity="0.85">
+    <path d="M360 340 C320 240 360 140 430 120 C520 100 600 200 560 320 C520 440 600 460 640 540 C680 620 650 720 560 740 C460 760 380 660 410 540 C440 420 400 440 360 340"/>
+    <path d="M560 260 C520 190 540 120 600 90 C680 60 740 140 710 220 C680 300 720 340 760 420 C800 500 770 600 690 610 C610 620 560 540 590 460 C620 380 600 330 560 260" opacity="0.6"/>
+  </g>
+  <g>
+    <ellipse cx="525" cy="1160" rx="420" ry="120" fill="#d0c7ff" opacity="0.35"/>
+    <path d="M260 920 Q525 1040 790 920 V1140 Q525 1250 260 1140 Z" fill="url(#ceramic)"/>
+    <path d="M300 880 C460 960 590 960 750 880 L780 840 Q780 760 720 720 C600 660 450 660 330 720 C270 760 270 840 300 880" fill="#3f2b85"/>
+    <ellipse cx="525" cy="730" rx="240" ry="70" fill="#f5f1ff" opacity="0.85"/>
+    <ellipse cx="525" cy="720" rx="170" ry="35" fill="#d4caff" opacity="0.8"/>
+  </g>
+</svg>

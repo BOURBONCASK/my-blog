@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500">
+  <defs>
+    <linearGradient id="forestSky" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#155e75"/>
+    </linearGradient>
+    <radialGradient id="light" cx="50%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#d9f99d" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#forestSky)"/>
+  <ellipse cx="600" cy="280" rx="720" ry="420" fill="url(#light)"/>
+  <g fill="#0b3d2e">
+    <path d="M0 900 Q200 780 360 860 T720 820 T1200 910 V1500 H0 Z" opacity="0.7"/>
+    <path d="M0 1020 Q240 900 520 980 T900 940 T1200 1080 V1500 H0 Z" opacity="0.85"/>
+  </g>
+  <g fill="#14532d" opacity="0.8">
+    <circle cx="180" cy="980" r="160"/>
+    <circle cx="450" cy="940" r="190"/>
+    <circle cx="770" cy="970" r="210"/>
+    <circle cx="1020" cy="940" r="180"/>
+  </g>
+  <g stroke="#bbf7d0" stroke-width="14" stroke-linecap="round" opacity="0.4">
+    <path d="M220 600 Q260 520 300 580 T340 760"/>
+    <path d="M480 560 Q520 480 560 520 T600 720"/>
+    <path d="M860 580 Q900 500 940 520 T980 720"/>
+  </g>
+</svg>
