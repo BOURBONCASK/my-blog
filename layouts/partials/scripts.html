@@ -1,0 +1,4 @@
+{{ if or (eq .Type "gallery") (eq .Layout "gallery") }}
+  {{ $gallery := resources.Get "js/gallery.js" | resources.Minify }}
+  <script defer src="{{ $gallery.RelPermalink }}"></script>
+{{ end }}

@@ -1,24 +1,6 @@
 +++
 title = 'About'
-description = 'Who I am, what I do, and how to reach me.'
+description = 'A succinct introduction to Yifei Ma and how to get in touch.'
 +++
 
-## 关于我
-
-你好，我是 **BourbonCask**，一名关注性能与设计体验的全栈工程师。我的工作涵盖前端体验、后端架构以及自动化运维。我相信优雅的界面与可靠的工程同样重要。
-
-## 做过的事情
-
-- 主导过多语言内容平台的架构升级，将页面首屏渲染速度提升了 35%。
-- 为创意团队打造组件化设计系统，在保持风格一致的同时提高了迭代效率。
-- 设计 CI/CD 流水线，帮助团队实现从提交到上线的自动化交付。
-
-## 目前的兴趣
-
-- 如何在现代框架中构建可维护的可视化组件。
-- 利用边缘计算与缓存技术缩短全球访问延迟。
-- 通过写作将复杂概念讲述得更加通俗易懂。
-
-## 与我联系
-
-若你想合作或交流，欢迎发送邮件到 [hello@example.com](mailto:hello@example.com)。也可以在社交平台上找到我。
+我是 Yifei Ma，一名专注于具身智能的工程师，目前主要负责机器人中间件与工具链的设计、性能优化以及部署体验。你可以在 [GitHub 上查看简历](https://github.com/YIFEI-MA/resume)。若想交流合作，欢迎发送邮件至 [hello@bourboncask.dev](mailto:hello@bourboncask.dev)。

@@ -1,0 +1,75 @@
+{{ define "main" }}
+  <div class="landing landing--refined">
+    {{ with .Params.hero }}
+      <section class="landing-hero landing-hero--minimal">
+        <div class="landing-hero__inner">
+          {{ with .eyebrow }}<p class="landing-hero__eyebrow">{{ . }}</p>{{ end }}
+          {{ with .title }}<h1 class="landing-hero__title">{{ . }}</h1>{{ end }}
+          {{ with .description }}<p class="landing-hero__description">{{ . }}</p>{{ end }}
+          <div class="home-pill-group">
+            <span>机器人中间件</span>
+            <span>性能工具链</span>
+            <span>可观测性工程</span>
+          </div>
+          {{ with .resumeLinkText }}
+            <a class="landing-hero__link" href="{{ $.Params.hero.resumeLinkUrl }}" target="_blank" rel="noopener">{{ . }} →</a>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+
+    <section class="landing-section landing-section--posts">
+      <header class="landing-section__header">
+        <h2>最新文章</h2>
+        <p>记录具身智能基础设施的迭代与幕后细节。</p>
+      </header>
+      {{ $posts := first 4 (where site.RegularPages "Section" "posts") }}
+      {{ if $posts }}
+        <ul class="landing-posts">
+          {{ range $posts }}
+            <li>
+              <a href="{{ .RelPermalink }}" class="landing-posts__link">
+                <div class="landing-posts__text">
+                  <span class="landing-posts__title">{{ .Title }}</span>
+                  {{ with .Params.summary }}<p>{{ . }}</p>{{ else }}{{ with .Summary }}<p>{{ . }}</p>{{ end }}{{ end }}
+                </div>
+                <span class="landing-posts__meta">{{ .Date.Format "2006.01.02" }}</span>
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      {{ else }}
+        <p class="landing-empty">内容整理中，敬请期待。</p>
+      {{ end }}
+    </section>
+
+    {{ with site.GetPage "gallery" }}
+      {{ $items := first 4 (.Params.gallery) }}
+      {{ if $items }}
+        <section class="landing-section landing-section--gallery">
+          <header class="landing-section__header">
+            <h2>Gallery 预览</h2>
+            <p>收集摄影与视觉实验的片段。</p>
+            <a class="landing-section__link" href="{{ .RelPermalink }}">进入 Gallery →</a>
+          </header>
+          <div class="landing-gallery__preview">
+            {{ range $items }}
+              <figure>
+                <img src="{{ .src }}" alt="{{ .alt }}" loading="lazy" />
+                {{ with .caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+              </figure>
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+    {{ end }}
+
+    {{ with .Content }}
+      <section class="landing-section">
+        <div class="card card--compact">
+          {{ . }}
+        </div>
+      </section>
+    {{ end }}
+  </div>
+{{ end }}
